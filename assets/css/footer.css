@@ -1,0 +1,14 @@
+@import url("global.css");
+
+.p-footer {
+  height: 10%;
+  width: 100%;
+  position: relative;
+}
+
+.p-footer__image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+}

@@ -1,0 +1,70 @@
+@import url("global.css");
+
+.p-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 55%;
+  text-align: center;
+}
+
+.p-header__photo img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.p-header__more img {
+  width: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.p-header__hello {
+  font-family: "Neue Machina", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+
+.p-header__info-list {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  align-self: flex-end;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.p-info-list__item {
+  margin: 1rem 0;
+}
+
+.p-info-list__item::before {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+
+#profile\.job::before {
+  background-image: url("../img/icons/job.svg");
+}
+
+#profile\.location::before {
+  background-image: url("../img/icons/location.svg");
+}
+#profile\.phone::before {
+  background-image: url("../img/icons/phone.svg");
+}
+#profile\.email::before {
+  background-image: url("../img/icons/email.svg");
+}

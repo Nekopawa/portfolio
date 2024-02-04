@@ -1,0 +1,20 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("../fonts/neue-machina-regular.otf");
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}

@@ -1,0 +1,45 @@
+@import url("global.css");
+
+body {
+  background-color: #000;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-content {
+  height: 95vh;
+  width: 95vw;
+  border: solid 1px white;
+  border-radius: 15px;
+  padding: 2rem;
+  position: relative;
+}
+
+.p-content::before
+/*, .p-content::after */ {
+  content: "";
+  background-image: url("../img/background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: inline-block;
+  position: fixed;
+  width: 140vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+/*.p-content::after {
+  content: "";
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}*/
