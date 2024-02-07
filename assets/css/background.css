@@ -2,44 +2,36 @@
 
 body {
   background-color: #000;
-  color: white;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #fff;
 }
 
 .p-content {
-  height: 95vh;
-  width: 95vw;
+  margin: 1rem;
+  padding: 2rem;
   border: solid 1px white;
   border-radius: 15px;
-  padding: 2rem;
-  position: relative;
 }
 
-.p-content::before
-/*, .p-content::after */ {
+.p-content::before,
+.p-content::after {
   content: "";
   background-image: url("../img/background.svg");
-  background-position: center;
   background-repeat: no-repeat;
-  object-fit: contain;
+  background-size: contain;
   display: inline-block;
   position: fixed;
   width: 140vw;
   height: 100vh;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
-/*.p-content::after {
+.p-content::after {
   content: "";
   top: auto;
   left: auto;
   bottom: 0;
   right: 0;
   transform: rotate(180deg);
-}*/
+}

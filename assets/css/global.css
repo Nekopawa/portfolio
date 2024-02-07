@@ -5,9 +5,14 @@
   src: url("../fonts/neue-machina-regular.otf");
 }
 
+:root {
+  --open-color: #55569e;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
+  color: white;
 }
 
 h2 {
@@ -17,4 +22,5 @@ h2 {
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }

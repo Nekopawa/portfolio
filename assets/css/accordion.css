@@ -1,0 +1,166 @@
+@import url("global.css");
+
+.p-accordion-list {
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-accordion__item {
+  min-height: 20%;
+  height: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.p-accordion__button {
+  height: 6vh;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.p-accordion__button:hover {
+  background-color: var(--open-color);
+}
+
+.p-accordion__button::after {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../img/icons/arrow-top.svg");
+  background-size: contain;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: 0.25s;
+}
+
+.p-accordion__content {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+/* OPEN */
+.p-accordion__item--open {
+  background-color: var(--open-color);
+  border: 1px solid var(--open-color);
+  border-radius: 15px;
+}
+
+.p-accordion__item--open .p-accordion__button {
+  border: none;
+}
+
+.p-accordion__item--open .p-accordion__button::after {
+  transform: rotate(180deg);
+}
+
+.p-accordion__item--open .p-accordion__content {
+  height: auto;
+  width: 100%;
+  opacity: 1;
+  padding: 0 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skills */
+.p-content__skills {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.p-logos__item img {
+  width: 3rem;
+  margin: 0 1rem;
+}
+
+.p-content__soft-skills-list {
+  list-style-type: disc;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 1rem;
+}
+
+.p-soft-skills__item {
+  margin: 0.75rem 1rem;
+}
+
+/* Languages */
+.p-content__languages-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.p-languages_item {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.p-languages_item::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/icons/check.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Portfolio */
+.p-content__portfolio-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.p-portfolio__title::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/icons/github.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Professional experience */
+.p-professional-experience-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.p-professional-experience__item {
+  margin-bottom: 1rem;
+}
+
+.p-period::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("../img/icons/calendar.svg");
+  margin-right: 0.5rem;
+}

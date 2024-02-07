@@ -16,7 +16,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="./assets/css/background.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/acordeon.css" />
+    <link rel="stylesheet" href="./assets/css/accordion.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
   </head>
   <body>
@@ -42,25 +42,104 @@
         </section>
       </header>
 
-      <section class="p-acordeon-list">
-        <section class="p-acordeon__item">
-          <button class="p-acordeon__button">Skills</button>
-          <div class="p-acordeon__content"></div>
+      <section class="p-accordion-list">
+        <section class="p-accordion__item">
+          <button class="p-accordion__button">Skills</button>
+          <div class="p-accordion__content">
+            <h3 class="p-content__title">Tools:</h3>
+            <div class="p-content__skills">
+              <picture class="p-logos__item">
+                <img src="./assets/img/icons/tools/node.svg" alt="Node.js" />
+              </picture>
+              <picture class="p-logos__item">
+                <img
+                  src="./assets/img/icons/tools/javascript.svg"
+                  alt="Javascript"
+              /></picture>
+              <picture class="p-logos__item">
+                <img src="./assets/img/icons/tools/css.svg" alt="CSS" />
+              </picture>
+              <picture class="p-logos__item">
+                <img src="./assets/img/icons/tools/git.svg" alt="Git" />
+              </picture>
+              <picture class="p-logos__item">
+                <img src="./assets/img/icons/tools/java.svg" alt="Java" />
+              </picture>
+            </div>
+            <h3 class="p-content__title">Soft skills:</h3>
+            <ul class="p-content__soft-skills-list">
+              <li class="p-soft-skills__item">Adaptability</li>
+              <li class="p-soft-skills__item">Dedication</li>
+              <li class="p-soft-skills__item">Desire to learn</li>
+              <li class="p-soft-skills__item">Empathy</li>
+              <li class="p-soft-skills__item">Listening</li>
+              <li class="p-soft-skills__item">Organization</li>
+            </ul>
+          </div>
         </section>
 
-        <section class="p-acordeon__item">
-          <button class="p-acordeon__button">Languages</button>
-          <div class="p-acordeon__content"></div>
+        <section class="p-accordion__item">
+          <button class="p-accordion__button">Languages</button>
+          <div class="p-accordion__content">
+            <ul class="p-content__languages-list">
+              <li class="p-languages_item">Portuguese (BR)</li>
+              <li class="p-languages_item">English</li>
+              <li class="p-languages_item">Spanish</li>
+            </ul>
+          </div>
         </section>
 
-        <section class="p-acordeon__item">
-          <button class="p-acordeon__button">Portfolio</button>
-          <div class="p-acordeon__content"></div>
+        <section class="p-accordion__item">
+          <button class="p-accordion__button">Portfolio</button>
+          <div class="p-accordion__content">
+            <ul class="p-content__portfolio-list">
+              <li class="p-portfolio__item">
+                <h3 class="p-portfolio__title">Spider-verse</h3>
+                <a
+                  class="p-portfolio__link"
+                  href="https://github.com/Nekopawa/spider-man-multiverse"
+                  target="_blank"
+                  >https://github.com/Nekopawa/spider-man-multiverse</a
+                >
+              </li>
+              <li class="p-portfolio__item">
+                <h3 class="p-portfolio__title">Creating a pokedex</h3>
+                <a
+                  class="p-portfolio__link"
+                  href="https://github.com/Nekopawa/dio-pokedex"
+                  target="_blank"
+                  >https://github.com/Nekopawa/dio-pokedex</a
+                >
+              </li>
+            </ul>
+          </div>
         </section>
 
-        <section class="p-acordeon__item">
-          <button class="p-acordeon__button">Professional experience</button>
-          <div class="p-acordeon__content"></div>
+        <section class="p-accordion__item">
+          <button class="p-accordion__button">Professional experience</button>
+          <div class="p-accordion__content">
+            <ul class="p-professional-experience-list">
+              <li class="p-professional-experience__item">
+                <h3 class="p-job-title">Junior Developer / Philips</h3>
+                <p class="p-period">2021 - 2024</p>
+                <p class="p-job-description">
+                  I worked on the development of the software Tasy, a system
+                  used for the management of hospitals, clinics and other.
+                </p>
+              </li>
+              
+              <li class="p-professional-experience__item">
+                <h3 class="p-job-title">Junior Developer / Senior Sistemas</h3>
+                <p class="p-period">2018 - 2021</p>
+                <p class="p-job-description">
+                  I worked on the development and maintenance of the software
+                  Gestão de Pessoas, used for routines related to human
+                  resources.
+                </p>
+              </li>
+            </ul>
+          </div>
+          </div>
         </section>
       </section>
 
@@ -69,6 +148,8 @@
           <img src="./assets/img/dio.svg" />
         </picture>
       </footer>
+
+      <script src="./assets/script/main.js"></script>
     </main>
   </body>
 </html>
