@@ -8,6 +8,7 @@
   position: relative;
   width: 100%;
   height: 55%;
+  margin-bottom: 1rem;
 }
 
 .p-header__photo img {
@@ -44,6 +45,10 @@
   margin: 1rem 0;
 }
 
+.p-info-list__item#profile\.email {
+  word-break: break-all;
+}
+
 .p-info-list__item::before {
   content: "";
   display: inline-block;
@@ -57,7 +62,6 @@
 #profile\.job::before {
   background-image: url("../img/icons/job.svg");
 }
-
 #profile\.location::before {
   background-image: url("../img/icons/location.svg");
 }
@@ -66,4 +70,32 @@
 }
 #profile\.email::before {
   background-image: url("../img/icons/email.svg");
+}
+
+@media only screen and (min-width: 768px) {
+  .p-header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "photo hello"
+      "photo info";
+  }
+
+  .p-header__photo {
+    grid-area: photo;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .p-header__hello {
+    grid-area: hello;
+    text-align: start;
+    align-self: center;
+  }
+
+  .p-header__info-list {
+    grid-area: info;
+    align-self: start;
+  }
 }

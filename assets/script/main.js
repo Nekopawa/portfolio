@@ -23,9 +23,15 @@ function updateProfileInfo(profileData) {
 
   const phone = document.getElementById("profile.phone");
   phone.innerHTML = profileData.phone;
+  phone.href = `tel:+${getTel(profileData.phone)}`;
 
   const email = document.getElementById("profile.email");
   email.innerHTML = profileData.email;
+  email.href = `mailto:${profileData.email}`;
+}
+
+function getTel(phone) {
+  return phone.replaceAll(/[^0-9]/g, "");
 }
 
 function updateHardSkills(profileData) {
