@@ -40,7 +40,7 @@ function updateHardSkills(profileData) {
     .map((skill) => {
       return `
         <picture class="p-logos__item">
-            <img src="${skill.logo}" alt="${skill.name}" title="${skill.name}" />
+            <img src="${skill.logo}" alt="${skill.name}" />
         </picture>
     `;
     })

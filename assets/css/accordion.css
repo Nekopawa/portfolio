@@ -55,6 +55,10 @@
   transition: opacity 0.25s ease-in-out;
 }
 
+.p-content__title {
+  font-size: 1.25rem;
+}
+
 /* OPEN */
 .p-accordion__item--open {
   background-color: var(--open-color);
