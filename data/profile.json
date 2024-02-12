@@ -1,0 +1,69 @@
+{
+    "name": "Rafaela Aline Hoffmann",
+    "photo": "https://avatars.githubusercontent.com/u/67767647",
+    "job": "Junior Developer",
+    "location": "Blumenau - SC",
+    "phone": "(47) 9918-7500",
+    "email": "rafaahoffmann@hotmail.com",
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "Nodejs",
+          "logo": "https://raw.githubusercontent.com/Nekopawa/portfolio/main/assets/img/icons/tools/node.svg"
+        },
+        {
+          "name": "Javascript",
+          "logo": "https://raw.githubusercontent.com/Nekopawa/portfolio/main/assets/img/icons/tools/javascript.svg"
+        },
+        {
+          "name": "CSS",
+          "logo": "https://raw.githubusercontent.com/Nekopawa/portfolio/main/assets/img/icons/tools/css.svg"
+        },
+        {
+          "name": "Git",
+          "logo": "https://raw.githubusercontent.com/Nekopawa/portfolio/main/assets/img/icons/tools/git.svg"
+        },
+        {
+            "name": "Java",
+            "logo": "https://raw.githubusercontent.com/Nekopawa/portfolio/main/assets/img/icons/tools/java.svg"
+          }
+      ],
+      "softSkills": [
+        "Adaptability",
+        "Dedication",
+        "Desire to learn",
+        "Empathy",
+        "Listening",
+        "Organization"
+      ]
+    },
+    "languages": [
+      "Portuguese (BR)",
+      "English",
+      "Spanish"
+    ],
+    "portfolio": [
+      {
+        "name": "Spider-verse",
+        "url": "https://github.com/Nekopawa/spider-man-multiverse",
+        "github": true
+      },
+      {
+        "name": "Creating a pokedex",
+        "url": "https://github.com/Nekopawa/dio-pokedex",
+        "github": true
+      }
+    ],
+    "professionalExperience": [
+      {
+        "name": "Junior Developer / Philips",
+        "period": "2021 - 2024",
+        "description": "I worked on the development of the software Tasy, a system used for the management of hospitals, clinics and other."
+      },
+      {
+        "name": "Junior Developer / Senior Sistemas",
+        "period": "2018 - 2021",
+        "description": "I worked on the development and maintenance of the software Gestão de Pessoas, used for routines related to human resources."
+      }
+    ]
+  }
